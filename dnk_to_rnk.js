@@ -1,3 +1,5 @@
+// Преобразует DNK маркеры в RNK маркеры. В случае пустоты = пустота, В случае ошибки hull
+
 const convertor = (str) => {
     let store = [];
     if (str == undefined) {
