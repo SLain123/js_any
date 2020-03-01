@@ -1,3 +1,5 @@
+// Функция глубокого сравнения объектов без использования методов
+
 const deepEqual = (obj1, obj2) => {
   let resultGn = true;
   
@@ -56,51 +58,51 @@ const deepStringAndNumber = (a, b) => {
 
 
 
-// var objA = {
-//   prop1: 'value1',
-//   prop2: 'value2',
-//   prop3: 'value3',
-//   prop4: {
-//       subProp1: 'sub value1',
-//       subProp2: {
-//           subSubProp1: 'sub sub value1',
-//           subSubProp2: [1, 2, {prop2: 1, prop: 2}, 4, 5]
-//       }
-//   },
-//   prop5: 1000,
+var objA = {
+  prop1: 'value1',
+  prop2: 'value2',
+  prop3: 'value3',
+  prop4: {
+      subProp1: 'sub value1',
+      subProp2: {
+          subSubProp1: 'sub sub value1',
+          subSubProp2: [1, 2, {prop2: 1, prop: 2}, 4, 5]
+      }
+  },
+  prop5: 1000,
   
-// };
+};
 
-// var objB = {
-//   prop5: 1000,
-//   prop3: 'value3',
-//   prop1: 'value1',
-//   prop2: 'value2',
-//   prop4: {
-//       subProp2: {
-//           subSubProp1: 'sub sub value1',
-//           subSubProp2: [1, 2, {prop2: 1, prop: 2}, 4, 5]
-//       },
-//       subProp1: 'sub value1'
-//   }
-// };
+var objB = {
+  prop5: 1000,
+  prop3: 'value3',
+  prop1: 'value1',
+  prop2: 'value2',
+  prop4: {
+      subProp2: {
+          subSubProp1: 'sub sub value1',
+          subSubProp2: [1, 2, {prop2: 1, prop: 2}, 4, 5]
+      },
+      subProp1: 'sub value1'
+  }
+};
 
 
-let objA = {
-  prop1: 'string',
-  prop2: 1000
-},
+// let objA = {
+//   prop1: 'string',
+//   prop2: 1000
+// },
 
-    objB = {
-  prop1: {
-    sub1: 123,
-    sub2: 321
-  },
-  prop2: {
-    sub3: 123,
-    sub4: 321
-  },
-    }
+//     objB = {
+//   prop1: {
+//     sub1: 123,
+//     sub2: 321
+//   },
+//   prop2: {
+//     sub3: 123,
+//     sub4: 321
+//   },
+//     }
 
 
 console.log(deepEqual(objA, objB));
